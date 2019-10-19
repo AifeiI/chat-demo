@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.aifeii.phonedemo.data.model.radar.Device" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:minHeight="48dp"
+        app:contentPadding="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.ip}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="TEST:port" />
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
